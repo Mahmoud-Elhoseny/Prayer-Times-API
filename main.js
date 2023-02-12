@@ -32,7 +32,7 @@ document.getElementById("cities").addEventListener("change", function (e) {
   country.innerHTML = e.target.value;
 
   fetch(
-    `http://api.aladhan.com/v1/timingsByCity/:date_or_timestamp?country=EG&city=${e.target.value}`
+    `https://api.aladhan.com/v1/timingsByCity/:date_or_timestamp?country=EG&city=${e.target.value}`
   )
     .then((response) => {
       response = response.json();
